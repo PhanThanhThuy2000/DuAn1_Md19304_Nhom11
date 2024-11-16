@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"> <!-- Add spacing below -->
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_share" />
+
+            <ImageView
+                android:id="@+id/btn_cart"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cart" />
+
+            <ImageView
+                android:id="@+id/btn_vert"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_vert" />
+        </LinearLayout>
+
+        <!-- Product Image Slider -->
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a5"
+            android:layout_marginBottom="16dp" /> <!-- Add spacing below -->
+
+        <!-- Color Variations -->
+        <HorizontalScrollView
+            android:id="@+id/color_variations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp"> <!-- Add spacing below -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/color_option_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/a1"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/color_option_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/a2"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/color_option_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/a3"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/color_option_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/a4"
+                    android:layout_marginEnd="8dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Product Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"> <!-- Add spacing below -->
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/giagiam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3,100,000đ"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Number of Items Sold -->
+            <ImageView
+                android:id="@+id/btn_giam"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_giam"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/giagoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-700,000đ"
+                android:textSize="15sp"
+                android:textColor="#5E000000"
+                android:layout_marginEnd="90dp" />
+
+            <TextView
+                android:id="@+id/items_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã bán 100"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔥 Hot Trend🔥 Giày Thể Thao Nam/Nữ B27 Cbristian Di_o 1947 Full màu thể thao trắng đỏ đen ..."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" /> <!-- Add spacing below -->
+
+        <!-- Delivery Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/delivery_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_delivery" />
+
+                <TextView
+                    android:id="@+id/delivery_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nhận từ 28 Tháng 9 - 30 Tháng 9, phí giao 0đ"
+                    android:textSize="14sp"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+
+            <!-- Faint Text Below -->
+            <TextView
+                android:id="@+id/delivery_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tặng Voucher 15.000 nếu đơn giao sau thời gian trên."
+                android:textSize="12sp"
+                android:textColor="#80000000"
+                android:layout_marginStart="33dp" /> <!-- Indent text to the right -->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp"> <!-- Add spacing below -->
+
+            <ImageView
+                android:id="@+id/icon_doiHang"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_tich" />
+
+            <TextView
+                android:id="@+id/doiHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đổi ý miễn phí 15 ngày"
+                android:textSize="14sp"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+
+
+        <!-- Buy and Voucher Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <!-- Nút đầu tiên với biểu tượng -->
+            <Button
+                android:id="@+id/btn_icon_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:backgroundTintMode="src_in"
+                android:drawableLeft="@drawable/ic_chart"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+
+            <!-- Nút thứ hai với biểu tượng -->
+            <Button
+                android:id="@+id/btn_icon_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_shopping_cart"
+                android:backgroundTint="@color/blue"
+                android:backgroundTintMode="src_in"
+                android:textColor="@color/white"
+                android:padding="8dp" />
+
+            <!-- Nút thứ ba vẫn giữ nguyên -->
+            <Button
+                android:id="@+id/btn_add_to_voche"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Voucher"
+                android:backgroundTint="@color/blue"
+                android:backgroundTintMode="src_in"
+                android:textColor="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

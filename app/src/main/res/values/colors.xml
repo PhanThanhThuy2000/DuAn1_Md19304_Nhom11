@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
 </resources>
+=======
+    <color name="red">#FFFF0000</color> <!-- Added red color -->
+    <color name="blue">#0000FF</color> <!-- Example of blue color -->
+
+</resources>
+>>>>>>> 77abe79 (main)
